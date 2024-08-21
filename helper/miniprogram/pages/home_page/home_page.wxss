@@ -1,0 +1,57 @@
+/* pages/home_page/home_page.wxss */
+
+.home_page_view{
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.swiperContainer{
+  width:100%;
+  height:360rpx;
+}
+
+
+.swiperContainer-item image{
+  width:100%;
+  height:100%;
+}
+
+.view_kindList {
+  width: 100%;
+  height: 100%;
+  column-count: 2;
+  column-gap: 0;
+  background-color: white;
+}
+
+.view_kind {
+  width: 100%;
+  height: 270rpx;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.button_kind {
+  color: white;
+  width: 70%;
+  height: 80%;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image_kind {
+  margin-top: 10rpx;
+  width: 90%;
+  height: 90%;
+}

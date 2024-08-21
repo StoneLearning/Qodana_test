@@ -1,0 +1,6 @@
+{
+  "onReachBottomDistance": 50,
+  "usingComponents": {
+    "van-search": "/miniprogram_npm/@vant/weapp/search/index"
+  }
+}

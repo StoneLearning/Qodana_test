@@ -1,0 +1,3 @@
+<view class="container pages">
+  <button type="primary" bind:tap="beginTap">开始答题</button>
+</view>

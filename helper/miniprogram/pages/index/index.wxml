@@ -1,0 +1,38 @@
+<!-- pages/garbage_classification/index.wxml -->
+<view class="page-container">
+
+  <!-- 主要信息 -->
+  <view class="category">
+
+    <!-- 第一部分 -->
+    <view class="title" >
+    <!-- <image src="{{categories[garbage_index].image}}"></image> -->
+      <text>{{categories[garbage_index].name}}</text>
+    </view>
+      <view class="description">
+      <text>{{categories[garbage_index].description}}</text>
+    </view>
+
+    <!-- 第二部分 -->
+    <view class="content">
+      <text class="text-title">主要包括</text>
+      <view class="items">
+      <text>{{categories[garbage_index].content}}</text>
+    </view>
+    </view>
+
+    <!-- 第三部分 -->
+    <view class="requirements">
+      <text class="text-title">投放要求</text>
+      <view class="requirements-list" wx:for="{{categories[garbage_index].action}}" wx:key >
+        <text>{{item}}</text>
+      </view>
+    </view>
+
+  </view>
+
+  <!-- 详细信息 -->
+  <view class="categories" wx:for="{{list_garbage}}" wx:key>
+    <text>{{item.categoryName}}</text>
+  </view>
+</view>

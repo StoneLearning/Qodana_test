@@ -1,0 +1,27 @@
+<view class="cu-bar bg-darkGray search">
+  <view class=" search-form  round " bindtap="goSearch">
+    <text class="cuIcon-search text-green"></text>
+    <input type="text" placeholder="输入垃圾名称" confirm-type="search" bindinput="searchIcon"></input>
+  </view>
+</view>
+
+<view class='ai-view'>
+  <image src='/images/paizhao.png' class='ai-paizhao' bindtap='onBindCamera' />
+  <text class='txt'>拍照识别</text>
+</view>
+
+
+
+<view class='ai-view'>
+  <image src='/images/speech_icon_128.png' class='ai-paizhao'  bindtouchstart='onTouchStart' bindtouchend='onTouchEnd' />
+  <text class='txt'>语音识别</text>
+</view>
+
+<view class="box" wx:if="{{SHOW_TOP}}">
+  <view class='arrow'></view>
+  <view class='body' bindtap='showModal'>
+    <text>点击「添加到我的小程序」</text>
+  </view>
+</view>
+
+

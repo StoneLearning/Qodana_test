@@ -1,0 +1,2 @@
+/* pages/user/feedback/feedback.wxss */
+input,textarea{border:1px solid #888}

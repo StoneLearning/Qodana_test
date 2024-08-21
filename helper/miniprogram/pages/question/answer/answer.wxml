@@ -1,0 +1,27 @@
+<view class="container">
+
+  <!-- 第一部分：垃圾条目 -->
+  <view class ="view_question">
+    <text>{{items_list[index].name}}</text>
+  </view>
+
+  <!-- 第二部分：选项 -->
+  <view class="view_choices">
+    <button data-category="1"  bindtap="selectOption" disabled="{{allDisabled}}">A:有害垃圾</button>
+    <button data-category="2"  bindtap="selectOption" disabled="{{allDisabled}}">B:可回收垃圾</button>
+    <button data-category="4"  bindtap="selectOption" disabled="{{allDisabled}}">C:湿垃圾</button>
+    <button data-category="8"  bindtap="selectOption" disabled="{{allDisabled}}">D:干垃圾</button>
+  </view>
+
+  <!-- 第三部分：调控按钮 -->
+  <view class="view_button">
+    <button type="primary" bind:tap="onConfirm">确定</button>
+
+    <button type="primary" bind:tap="onNextButton">下一题</button>
+  </view>
+
+  <!-- 第四部分：答案显示 -->
+  <view class="view_answer" hidden="{{!isVisible}}">
+    <text>{{isAnswerRight}},{{items_list[index].name}}属于{{item_categories}}</text>
+  </view>
+</view>

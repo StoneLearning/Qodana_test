@@ -1,0 +1,21 @@
+<!--pages/home_page/home_page.wxml-->
+<view class="home_page_view">
+  <swiper class="swiperContainer" indicator-dots="true" autoplay="true" circular="true" style="width: 600rpx; height: 255rpx; display: block; box-sizing: content-box">
+    <swiper-item>
+      <image style="width: 600rpx; height: 255rpx; display: inline-block; box-sizing: content-box" src="/images/0.jpg" mode="widthFix"/>
+    </swiper-item>
+    <swiper-item>
+      <image style="width: 600rpx" src="/images/1.jpg" mode="widthFix"/>
+    </swiper-item>
+    <swiper-item>
+      <image style="width: 600rpx; height: 255rpx; display: inline-block; box-sizing: border-box" src="/images/2.jpg" mode="widthFix"/>
+    </swiper-item>
+  </swiper>
+  <view class="view_kindList">
+    <view class="view_kind" wx:for="{{local_kindList}}" wx:key="{{item.text}}">
+      <button class="button_kind" style="background:{{item.color}}" data-item="{{item}}"  bindtap="handleClick" >
+        <image class="image_kind" src="{{item.imgPath}}" mode="aspectFit" /> {{item.text}}
+      </button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,24 @@
+<view class="view_search_begin">
+  <!-- 第一部分：搜索框 -->
+  <view class="view_search">
+    <van-search value="{{ searchText }}" shape="round"
+  background="#4fc08d" label="垃圾" placeholder="请输入搜索关键词" use-action-slot bind:change="onChange">
+    </van-search>
+  </view>
+
+  <!-- 第二部分：搜索列表 -->
+  <view class="filter-view" wx:for="{{datas}}" wx:key bindtap="onItemClick" data-index="{{item.categroyId}}">
+    <view class="item-view item-o bg-white" wx:if="{{index%2==0}}">
+      <text>{{item.garbageName}}</text>
+      <text>[{{item.categroyName}}]</text>
+    </view>
+
+    <view class="item-view item-ji bg-grey" wx:else>
+      <text>{{item.garbageName}}</text>
+      <text>[{{item.categroyName}}]</text>
+    </view>
+  </view>
+  <view class="item-view item-o bg-white"  wx:if="{{datas&&datas.length===0 && searchText.length>0}}">
+    <text>{{noResult}}</text>
+  </view>
+</view>

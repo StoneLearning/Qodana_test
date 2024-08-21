@@ -1,0 +1,17 @@
+<!--pages/user/feedback/feedback.wxml-->
+<van-cell-group>
+  <van-field
+    value="{{inputValue}}"
+    center
+    clearable
+    label="反馈信息"
+    placeholder="请输入你想反馈的内容"
+    border="{{ false }}"
+    use-button-slot
+      bindinput="onInput"
+  >
+    <van-button slot="button" size="small" type="primary" bind:tap="submitData">
+    确定
+    </van-button>
+  </van-field>
+</van-cell-group>

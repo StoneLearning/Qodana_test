@@ -1,0 +1,63 @@
+{
+  "pages": [
+
+    "pages/home_page/home_page",
+    "pages/index/index",
+    "pages/main/main",
+
+    "pages/for/search_begin/search_begin",
+    "pages/for/search/search",
+    "pages/for/results/results",
+
+    "pages/user/user_center/user_center",
+    "pages/user/feedback/feedback",
+    "pages/user/login/login",
+    "pages/user/info/info",
+
+
+    "pages/question/answer_begin/answer_begin",
+    "pages/question/answer/answer",
+    "pages/game/game"
+  ],
+  "window": {
+    "backgroundColor": "#ffffff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#409EFF",
+    "navigationBarTitleText": "喔喔小助手",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#515151",
+    "selectedColor": "#ffffff",
+    "borderStyle": "white",
+    "backgroundColor": "#409EFF",
+    "list": [
+      {
+      "pagePath":"pages/home_page/home_page",
+      "text": "首页",
+      "iconPath": "images/index.png",
+      "selectedIconPath": "images/index_tap.png"
+    },
+    {
+      "pagePath":"pages/for/search_begin/search_begin",
+      "text": "搜索",
+      "iconPath": "images/search.png",
+      "selectedIconPath": "images/search_tap.png"
+    },
+    {
+      "pagePath":"pages/question/answer_begin/answer_begin",
+      "text": "答题",
+      "iconPath": "images/answer.png",
+      "selectedIconPath": "images/answer_tap.png"
+    },
+    {
+      "pagePath":"pages/user/user_center/user_center",
+      "text": "个人",
+      "iconPath": "images/own.png",
+      "selectedIconPath": "images/own_tap.png"
+    }
+  ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

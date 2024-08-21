@@ -1,0 +1,1 @@
+"D:\1000 - software\1000 - tools\1100 - 微信小程序开发工具\微信web开发者工具\cli.bat" cloud functions deploy --e rubbish-1gdmyfs43f00fbd4 --n quickstartFunctions --r --project "D:\0000 - fileworker\0600 - 微信小程序开发\喔喔小助手" --report_first --report
